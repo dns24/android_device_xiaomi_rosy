@@ -1,3 +1,6 @@
+# allow system apps to read battery status
+r_dir_file(system_app, sysfs_battery_supply)
+
 # Input devices
 r_dir_file(system_server, idc_file);
 r_dir_file(system_server, keylayout_file);
