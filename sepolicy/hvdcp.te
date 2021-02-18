@@ -1,1 +1,2 @@
 allow hvdcp sysfs:file open;
+allow hvdcp sysfs:file read;
