@@ -2,3 +2,6 @@ allow system_server vendor_alarm_boot_prop:file { read open };
 
 # smartcharging
 allow system_server sysfs_battery_supply:file { getattr open read write };
+
+# vibrator
+allow system_server sysfs_vibrator:file read;
