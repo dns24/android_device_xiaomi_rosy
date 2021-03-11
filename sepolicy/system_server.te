@@ -4,3 +4,12 @@ r_dir_file(system_app, sysfs_battery_supply)
 # Input devices
 r_dir_file(system_server, idc_file);
 r_dir_file(system_server, keylayout_file);
+
+# alarm
+allow system_server vendor_alarm_boot_prop:file { read open };
+
+# smartcharging
+allow system_server sysfs_battery_supply:file { getattr open read write };
+
+# vibrator
+allow system_server sysfs_vibrator:file read;
