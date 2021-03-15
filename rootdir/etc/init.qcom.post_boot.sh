@@ -334,8 +334,8 @@ if [ "$ProductName" == "msmnile" ]; then
       # Enable ZRAM
       configure_zram_parameters
       configure_read_ahead_kb_values
-      echo 0 > /proc/sys/vm/page-cluster
-      echo 100 > /proc/sys/vm/swappiness
+      echo 10 > /proc/sys/vm/page-cluster
+      echo 80 > /proc/sys/vm/swappiness
 else
     arch_type=`uname -m`
     MemTotalStr=`cat /proc/meminfo | grep MemTotal`
@@ -345,8 +345,8 @@ else
     if [ $MemTotal -le 1048576 ] && [ "$low_ram" == "true" ]; then
         # Disable KLMK, ALMK, PPR & Core Control for Go devices
         echo 0 > /sys/module/lowmemorykiller/parameters/enable_lmk
-        echo 0 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
-        echo 0 > /sys/module/process_reclaim/parameters/enable_process_reclaim
+        echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+        echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
         disable_core_ctl
     else
 
@@ -383,13 +383,13 @@ else
                 disable_core_ctl
                 echo 1 > /sys/module/lowmemorykiller/parameters/enable_lmk
             fi
-        echo "15360,19200,23040,26880,34415,43737" > /sys/module/lowmemorykiller/parameters/minfree
+        echo "4659,9318,13977,18636,23295,27954" > /sys/module/lowmemorykiller/parameters/minfree
         echo 53059 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
         fi
 
         # Enable adaptive LMK for all targets &
         # use Google default LMK series for all 64-bit targets >=2GB.
-        echo 0 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+        echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
 
         # Enable oom_reaper
         if [ -f /sys/module/lowmemorykiller/parameters/oom_reaper ]; then
@@ -423,9 +423,9 @@ else
     fi
 
     # Set allocstall_threshold to 0 for all targets.
-    # Set swappiness to 100 for all targets
+    # Set swappiness to 80 for all targets
     echo 0 > /sys/module/vmpressure/parameters/allocstall_threshold
-    echo 100 > /proc/sys/vm/swappiness
+    echo 80 > /proc/sys/vm/swappiness
 
     configure_zram_parameters
 
