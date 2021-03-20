@@ -190,7 +190,7 @@ PRODUCT_COPY_FILES += \
 
 # Offline Charger
 PRODUCT_PACKAGES += \
-    charger_res_images
+    chargeonlymode
 
 # HEALTH
 PRODUCT_PACKAGES += \
