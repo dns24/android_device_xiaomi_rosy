@@ -46,36 +46,6 @@ vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
-vendor/etc/acdbdata/MTP_Global/msm8953-tasha-snd-card/MTP_Global_WCD9335_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP_Global/msm8953-tasha-snd-card/MTP_Global_WCD9335_General_cal.acdb
-vendor/etc/acdbdata/MTP_Global/msm8953-tasha-snd-card/MTP_Global_WCD9335_Global_cal.acdb
-vendor/etc/acdbdata/MTP_Global/msm8953-tasha-snd-card/MTP_Global_WCD9335_Handset_cal.acdb
-vendor/etc/acdbdata/MTP_Global/msm8953-tasha-snd-card/MTP_Global_WCD9335_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP_Global/msm8953-tasha-snd-card/MTP_Global_WCD9335_Headset_cal.acdb
-vendor/etc/acdbdata/MTP_Global/msm8953-tasha-snd-card/MTP_Global_WCD9335_Speaker_cal.acdb
-vendor/etc/acdbdata/MTP_Global/MTP_Global_Bluetooth_cal.acdb
-vendor/etc/acdbdata/MTP_Global/MTP_Global_General_cal.acdb
-vendor/etc/acdbdata/MTP_Global/MTP_Global_Global_cal.acdb
-vendor/etc/acdbdata/MTP_Global/MTP_Global_Handset_cal.acdb
-vendor/etc/acdbdata/MTP_Global/MTP_Global_Hdmi_cal.acdb
-vendor/etc/acdbdata/MTP_Global/MTP_Global_Headset_cal.acdb
-vendor/etc/acdbdata/MTP_Global/MTP_Global_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_General_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Global_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/msm8953-sku4-snd-card/QRD_SKU4_workspaceFile.qwsp
-vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
-vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp
 
 # Audio - from Daisy QKQ1.191002.002 V11.0.5.0.QDLMIXM
 vendor/bin/audioflacapp|a8ae278497715aa53f6fb86d5f5af225da0fc5b0
